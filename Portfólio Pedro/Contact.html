@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link rel="shortcut icon" href="images/icons8-y-16.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container-1">
+        <img src="images/WhatsApp Image 2024-09-01 at 23.31.25.jpeg" alt="Foto de Pedro Delfino Yassuhira"
+            class="profile-pic"> <!-- Adicionando a imagem -->
+        <div class="content">
+            <h1>Meus Projetos*</h1>
+            <div class="social-icon">
+                <a href="https://www.linkedin.com/in/seuperfil" target="_blank" class="social-link">
+                    <img src="images/icons8-linkedin-48.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/pedrodelfino3108" target="_blank" class="social-link">
+                    <img src="images/icons8-github-48.png" alt="GitHub">
+                </a>
+                <a href="mailto:pedrod3108@gmail.com" class="social-link">
+                    <img src="images/icons8-gmail-novo-48.png" alt="Gmail">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <ul class="menu-horizontal">
+            <li><a href="index.html"><h2>Menu</h2></a></li>
+            <li><a href="SobreMim.html"><h2>Sobre Mim</h2></a></li>
+            <li><a href="Projects.html"><h2>Meus Projetos</h2></a></li>
+            <li><a href="Contact.html"><h2>Contato</h2></a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="form_box">
+            <h2 class="title">Envie uma mensagem pelo WhatsApp</h2>
+
+            <form id="WhatsAppForm" onsubmit="sendMensage(event)" method="get">
+                <input type="text" id="name" placeholder="Seu nome">
+                <input type="email" id="email" placeholder="Seu E-mail">
+                <input type="text" id="subject" placeholder="Assunto">
+
+                <textarea id="message" placeholder="Digite seu mensagem"></textarea>
+
+                <button type="submit">Enviar mensagem</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        function sendMensage(event) {
+            event.preventDefault();
+
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const assunto = document.getElementById('subject').value;
+            const mensagem = document.getElementById('message').value
+
+
+
+
+            const MensagemWhatsapp = `${encodeURIComponent(subject)}; Olá, meu nome é ${encodeURIComponent(name)}, meu e-mail é ${encodeURIComponent(email)}. ${encodeURIComponent(mensagem)}.`;
+            const numeroTelefone = '55119636369695';
+
+
+            window.open(`https://api.whatsapp.com/send?phone=${numeroTelefone}&text${MensagemWhatsapp}`, '__blank');
+        }
+    </script>
+</body>
+</html>

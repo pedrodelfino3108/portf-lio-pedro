@@ -1,0 +1,230 @@
+*,
+::after::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(to right, #FFFDD0  , #B0D99A );
+    padding-bottom: 50px;
+    margin: 8px;
+}
+
+body,
+textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+h2 {font-size: 18px;}
+
+h3 {font-weight: normal;}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form_box {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 700px;
+}
+
+.form_box .title {
+    padding: 24px 32px;
+    font-size: 24px;
+    border-bottom: thin solid #ccc;
+}
+
+.form_box form {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    padding: 32px;
+}
+
+
+.form_box input,
+.form_box textarea {
+    width: calc(50% - 8px);
+    height: 48px;
+    border-radius: 8px;
+    border: thin solid #999;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+
+.form_box input:first-child {
+    margin-right: 16px;
+}
+
+.form_box input[name=subject] {
+    width: 100%;
+
+}
+
+.form_box textarea {
+    width: 100%;
+    height: 180px;
+    padding: 16px;
+}
+
+
+.form_box button {
+    display: block;
+    border: none;
+    outline: none;
+    width: 180px;
+    height: 48px;
+    border-radius: 8px;
+    background-color: #4F7705;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.form_box button:hover {
+    background-color: #9BB935;
+}
+
+
+.container-1 {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    /* Centraliza os ícones horizontalmente */
+    align-items: center;
+    /* Alinha verticalmente, se necessário */
+    gap: 20px;
+    /* Espaçamento entre os ícones */
+    height: 48px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+
+}
+
+.social-icons img {
+    width: 30px;
+    /* Tamanho dos ícones */
+    height: 30px;
+    transition: transform 0.3s, opacity 0.3s;
+    /* Efeito de animação ao passar o mouse */
+
+}
+
+
+
+.social-link img {
+    height: 48px;
+    margin-left: 20px;
+}
+
+.social-link img:hover {
+    transform: scale(1.05);
+}
+
+.container-1 {
+    display: flex;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* Deixa a imagem em formato circular */
+    object-fit: cover;
+    /* Garante que a imagem se ajuste corretamente dentro do círculo */
+    margin-right: 20px;
+    border: 3px solid #4F7705;
+    /* Adiciona uma borda à imagem */
+}
+
+
+
+nav {
+    margin: 50px auto;
+    text-align: center; /* Centraliza o menu */
+}
+
+.menu-horizontal {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Garante que os itens fiquem alinhados no centro */
+}
+
+.menu-horizontal li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-horizontal li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+
+.menu-horizontal a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+    background-color: #4F7705;
+    color: white;
+}
+
+
+.efeitos {
+    margin-top: 10px;
+    display: flex;
+    text-align: center;
+    height: 48px;
+}
+
+h2 {
+    display: flex;
+    margin: 8px;
+    margin-right: px;
+}

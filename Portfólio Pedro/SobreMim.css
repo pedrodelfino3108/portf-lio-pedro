@@ -1,0 +1,168 @@
+*,
+::after::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #FFFDD0  , #B0D99A );
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Preenche toda a altura da tela */
+    margin: 0;
+    padding-bottom: 500px; /* Adiciona 50px de espaço no final */
+
+}
+
+h2 {font-size: 18px;}
+
+h3 {font-weight: normal;}
+
+/* Estilo do container que engloba a imagem e o texto */
+.container {
+    display: flex;
+    padding-right: 90px;
+    padding-left: 90px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-bottom: 50px;
+    margin: 8px;
+}
+
+.container-1 {
+    background-color: white;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 90px;
+    padding-right: 90px;
+    margin-top: 40px;
+    margin-left: 170px;
+    margin-right: 170px;
+    border-radius: 80px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suaviza a transição */
+
+}
+
+.container-1:hover {
+    transform: scale(1.05); /* Aumenta o container em 5% */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a sombra ao passar o mouse */
+}
+
+/* Estilizando a imagem do perfil */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Deixa a imagem em formato circular */
+    object-fit: cover; /* Garante que a imagem se ajuste corretamente dentro do círculo */
+    margin-right: 20px;
+    border: 3px solid #4F7705; /* Adiciona uma borda à imagem */
+}
+
+/* Estilizando o conteúdo ao lado da imagem */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Estilo do título principal */
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Estilo para o efeito de digitação */
+.efeitos {
+    margin-top: 10px;
+    white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+    border-right: 3px solid; /* Cria o cursor piscante */
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+/* Animação de digitação */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animação do cursor piscante */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-link {
+    margin: 0 15px;
+    display: inline-block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.social-link:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do ícone ao passar o mouse */
+    opacity: 0.8; /* Torna o ícone um pouco transparente */
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+nav {
+    margin: 50px auto;
+    text-align: center; /* Centraliza o menu */
+}
+
+.menu-horizontal {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Garante que os itens fiquem alinhados no centro */
+}
+
+.menu-horizontal li {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+.menu-horizontal li:last-child {
+    margin-right: 0; /* Remove o espaçamento do último item */
+}
+
+.menu-horizontal a {
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 18px;
+    color: #333;
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-horizontal a:hover {
+    background-color: #4F7705;
+    color: white;
+}
